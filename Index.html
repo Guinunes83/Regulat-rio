@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regulatório</title>
+</head>
+
+<body>
+  <nav id="menu-top">
+    <a href="#" id="menu-reuniao-cep">Reunião CEP</a>
+    <a href="#" id="menu-dados_pi">Dados PI</a>
+    <a href="#" id="menu-dados-estudos">Dados Estudos</a>
+    <a href="#" id="dados-paciente">Dados Paciente</a>
+    <a href="#" id="menu-relatorio_parcial">Relatório Parcial</a>
+  </nav>
+  <section id="cadastro-reuniao-cep">
+    <section id="cabecalho-reuniao-cep">
+      <h1>Reunião CEP</h1>
+    </section>
+    <section id="cadastro">
+      <label for="mes-reuniao">Mês da Reunião</label>
+      <select name="mes-reuniao" id="mes-reuniao">
+        <option value="janeiro">Janeiro</option>
+        <option value="fevereiro">Fevereiro</option>
+        <option value="marco">Março</option>
+        <option value="abril">Abril</option>
+        <option value="maio">Maio</option>
+        <option value="junho">Junho</option>
+        <option value="julho">Julho</option>
+        <option value="agosto">Agosto</option>
+        <option value="setembro">Setembro</option>
+        <option value="outubro">Outubro</option>
+        <option value="novembro">Novembro</option>
+        <option value="dezembro">Dezembro</option>
+      </select>
+      <label for="estudo">Estudo</label>
+      <input type="text" name="estudo" id="estudo">
+      <label for="categoria">Categoria</label>
+      <input type="text" name="categoria" id="categoria">
+      <label for="emenda">Emenda</label>
+      <select name="emenda" id="emenda">
+        <option value="emenda">Emenda</option>
+        <option value="relatorio">Relatório</option>
+        <option value="submissao">Submissão</option>
+      </select>
+      <label for="observacao">Obs</label>
+      <select name="observacao" id="observacao">
+        <option value="em-edicao-obs">Em Edição</option>
+        <option value="coletando-assinatura">Coletando Assinatura</option>
+        <option value="ok-pb">Ok PB</option>
+        <option value="nao-aprovado">Não Aprovado</option>
+      </select>
+      <label for="aprovacao-cep">Aprovação do CEP</label>
+      <select name="em-edicao-ac" id="em-edicao-ac">
+        <option value="em-edicao-ac">Em Edição</option>
+        <option value="Aguardando-aprovacao">Aguardando Aprovação do CEP</option>
+        <option value="pendencia">Pendência</option>
+        <option value="pendencia-respondida">Pendência Respondida</option>
+        <option value="nao-aprovado">Não Aprovado</option>
+        <option value="aprovado-ac">Aprovado</option>
+      </select>
+      <label for="treinamento">Treinamento</label>
+      <select name="treinamento" id="treinamento">
+        <option value="na">N/A</option>
+        <option value="siv">SIV</option>
+        <option value="aguardando">Aguardando</option>
+        <option value="coletando-assinatura">Coletando Assinatura</option>
+        <option value="enviar-monitor">Enviar P/Monitor</option>
+        <option value="ok-tre">Ok</option>
+      </select>
+      <label for="mini-protocolo">Mini-Protocolo</label>
+      <select name="mini-protocolo" id="mini-protocolo">
+        <option value="aguard-solicitar">Aguardando Para Solicitar</option>
+        <option value="solicitado">Solicitado</option>
+        <option value="confirmado-envio">Confirmado Envio</option>
+        <option value="imprimir">Imprimir</option>
+        <option value="ok-mp">Ok</option>
+      </select>
+      <label for="ultima-verificacao">Última verificação</label>
+      <input type="date" name="ultima-verificacao" id="ultima-verificacao">
+      <input type="button" value="Cadastrar">
+      <input type="button" value="Editar">
+      <input type="button" value="Localizar">
+    </section>
+    <hr>
+    <main>
+      <h2>GRUPO ELORA</h2>
+
+      <table class="tabela-reuniao-cep">
+        <tr>
+          <th>Mês da Reunião</th>
+          <th>Estudo</th>
+          <th>Categoria</th>
+          <th>Emenda</th>
+          <th>Obs</th>
+          <th>Aprovação do CEP</th>
+          <th>Treinamento</th>
+          <th>Mini-Protocolo</th>
+          <th>Última Verificação</th>
+        </tr>
+      </table>
+      <p class="orientacao">Texto....</p>
+
+    </main>
+
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
